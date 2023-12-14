@@ -20,7 +20,7 @@ public class DAOEmpleadoImplementacion implements DAOEmpleado {
         try {
             Connection conectar = main.establecerConeccion();
             
-            PreparedStatement insertar = conectar.prepareStatement("INSERT INTO  empleados(id, nombre) VALUES(?, ?");
+            PreparedStatement insertar = conectar.prepareStatement("INSERT INTO  empleados(id, nombre) VALUES(?, ?)");
             
             insertar.setInt(1, empleado.getId());
             
